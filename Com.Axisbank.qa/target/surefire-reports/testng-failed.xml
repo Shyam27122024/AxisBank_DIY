@@ -8,12 +8,14 @@
     <classes>
       <class name="Com.AxisBank.QATest.TestCases">
         <methods>
+          <include name="VerifyTrasactionPage"/>
           <include name="Verify_ApplicationDetailsPage_FATCA_Details"/>
           <include name="Verify_LOA_ApplicationDetailsPage_DebitCardDetails"/>
+          <include name="Verify_LOA_ApplicationDetailsPage_FamilyDetails"/>
           <include name="Verify_ApplicationDetailsPage_FamilyDetails"/>
           <include name="Verify_Entity_Details_Profile_Sheet_Screen"/>
+          <include name="Verify_ApplicationDetailsPage_CreditFacilityDetails"/>
           <include name="Verify_VKYC_Page_SendVKYC"/>
-          <include name="teardown"/>
           <include name="Verify_ApplicationDetailsPage_BusinessDetails"/>
           <include name="Verify_ApplicationDetailsPage_AddNominee"/>
           <include name="Verify_ConfigurationPage_AccountDetails"/>
@@ -29,11 +31,13 @@
           <include name="Verify_Entity_Details_POA_Screen"/>
           <include name="Verify_LOA_Application_DetailsPage_PersonalDetails"/>
           <include name="Verify_ApplicationDetailsPage_Add_LOA"/>
+          <include name="Verify_Entity_Details_Chennel_Facility_Screen"/>
           <include name="Verify_LOA_ApplicationDetailsPage_BusinessDetails"/>
           <include name="Verify_LOA_ApplicationDetailsPage_FATCA_Details"/>
           <include name="Verify_ApplicationDetailsPage_AddressDetails"/>
           <include name="Verify_LOA_ApplicationDetailsPage_AddressDetails"/>
           <include name="Verify_ApplicationDetailsPage_PersoanlDetails"/>
+          <include name="KYC_ScreenTest_Positive"/>
         </methods>
       </class>
     </classes>

@@ -14,8 +14,8 @@ public class TestBase {
 	public static WebDriver driver;
 	public void CrossBrowserTesting(String browser) throws EncryptedDocumentException, IOException {
 		if(browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\Shyam\\chromedriver.exe");
-		 driver = (WebDriver) new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver-win64\\Driver\\chromedriver.exe");
+		driver = (WebDriver) new ChromeDriver();
 	   }else if(browser.equalsIgnoreCase("firefox")) {
 		 System.setProperty("webdriver.gecko.driver", "D:\\Shyam\\geckodriver.exe");
 		 driver = (WebDriver) new FirefoxDriver();

@@ -1,172 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="LPT6849" failures="24" tests="29" name="Com.AxisBank.QATest.TestCases" time="270.51" errors="0" timestamp="10 Jan 2025 07:27:26 GMT">
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="VerifyTrasactionPage" time="0.295"/>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="KYC_ScreenTest_Positive" time="5.104"/>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Entity_Details_POI_Screen" time="11.776">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+<testsuite hostname="LPT6849" failures="0" tests="29" name="Com.AxisBank.QATest.TestCases" time="3.702" errors="0" timestamp="5 Sep 2025 07:20:15 GMT">
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="@BeforeClass setup" time="0.0">
+    <failure type="org.openqa.selenium.SessionNotCreatedException" message="session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.155 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: driver.version: unknown">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.100.180&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x0x7ff75a89fca5+79861]
+	GetHandleVerifier [0x0x7ff75a89fd00+79952]
+	(No symbol) [0x0x7ff75a61cada]
+	(No symbol) [0x0x7ff75a661f94]
+	(No symbol) [0x0x7ff75a660fac]
+	(No symbol) [0x0x7ff75a65ab6a]
+	(No symbol) [0x0x7ff75a656340]
+	(No symbol) [0x0x7ff75a6aa84f]
+	(No symbol) [0x0x7ff75a6a9fd0]
+	(No symbol) [0x0x7ff75a69c8b3]
+	(No symbol) [0x0x7ff75a665272]
+	(No symbol) [0x0x7ff75a666043]
+	GetHandleVerifier [0x0x7ff75ab5b9dd+2946349]
+	GetHandleVerifier [0x0x7ff75ab55c5a+2922410]
+	GetHandleVerifier [0x0x7ff75ab759e7+3052855]
+	GetHandleVerifier [0x0x7ff75a8baa8e+189918]
+	GetHandleVerifier [0x0x7ff75a8c2a2f+222591]
+	GetHandleVerifier [0x0x7ff75a8a8ac4+116244]
+	GetHandleVerifier [0x0x7ff75a8a8c79+116681]
+	GetHandleVerifier [0x0x7ff75a88f058+11176]
+	BaseThreadInitThunk [0x0x7ffa6e03259d+29]
+	DummyExport [0x0x7ffa21b63aee+65726]
+	RtlUserThreadStart [0x0x7ffa6e2eaf78+40]
+">
+      <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.155 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
-	at Com.AxisBankQA.Pages.EntityDetailsPage.Select_Document(EntityDetailsPage.java:133)
-	at Com.AxisBank.QATest.TestCases.Verify_Entity_Details_POI_Screen(TestCases.java:75)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 22 stack frames]]>
-    </failure>
-  </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Entity_Details_POA_Screen" time="10.28">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: driver.version: unknown">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
-	at Com.AxisBankQA.Pages.EntityDetailsPage.selectBankBranch_DropDown(EntityDetailsPage.java:162)
-	at Com.AxisBank.QATest.TestCases.Verify_Entity_Details_POA_Screen(TestCases.java:85)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 22 stack frames]]>
-    </failure>
-  </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Credit_Facility_Details_Screen" time="10.257">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: driver.version: unknown">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
-	at Com.AxisBankQA.Pages.EntityDetailsPage.Select_Bank_Name(EntityDetailsPage.java:177)
-	at Com.AxisBank.QATest.TestCases.Verify_Credit_Facility_Details_Screen(TestCases.java:92)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 22 stack frames]]>
-    </failure>
-  </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Entity_Details_Account_Details_Screen" time="10.291">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: driver.version: unknown">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
-	at Com.AxisBankQA.Pages.EntityDetailsPage.NatureOfBusiness(EntityDetailsPage.java:211)
-	at Com.AxisBank.QATest.TestCases.Verify_Entity_Details_Account_Details_Screen(TestCases.java:106)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 22 stack frames]]>
-    </failure>
-  </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Entity_Details_Profile_Sheet_Screen" time="10.553">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: driver.version: unknown">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
-	at Com.AxisBankQA.Pages.EntityDetailsPage.Select_SourceOfFunds(EntityDetailsPage.java:236)
-	at Com.AxisBank.QATest.TestCases.Verify_Entity_Details_Profile_Sheet_Screen(TestCases.java:117)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 22 stack frames]]>
-    </failure>
-  </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Entity_Details_Chennel_Facility_Screen" time="0.842"/>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_PersoanlDetails" time="10.088">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#txtAppDetlsEmailID&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetlsEmailID}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtAppDetlsEmailID"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetlsEmailID}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+System info: host: 'LPT6849', ip: '192.168.100.180', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x0x7ff75a89fca5+79861]
+	GetHandleVerifier [0x0x7ff75a89fd00+79952]
+	(No symbol) [0x0x7ff75a61cada]
+	(No symbol) [0x0x7ff75a661f94]
+	(No symbol) [0x0x7ff75a660fac]
+	(No symbol) [0x0x7ff75a65ab6a]
+	(No symbol) [0x0x7ff75a656340]
+	(No symbol) [0x0x7ff75a6aa84f]
+	(No symbol) [0x0x7ff75a6a9fd0]
+	(No symbol) [0x0x7ff75a69c8b3]
+	(No symbol) [0x0x7ff75a665272]
+	(No symbol) [0x0x7ff75a666043]
+	GetHandleVerifier [0x0x7ff75ab5b9dd+2946349]
+	GetHandleVerifier [0x0x7ff75ab55c5a+2922410]
+	GetHandleVerifier [0x0x7ff75ab759e7+3052855]
+	GetHandleVerifier [0x0x7ff75a8baa8e+189918]
+	GetHandleVerifier [0x0x7ff75a8c2a2f+222591]
+	GetHandleVerifier [0x0x7ff75a8a8ac4+116244]
+	GetHandleVerifier [0x0x7ff75a8a8c79+116681]
+	GetHandleVerifier [0x0x7ff75a88f058+11176]
+	BaseThreadInitThunk [0x0x7ffa6e03259d+29]
+	DummyExport [0x0x7ffa21b63aee+65726]
+	RtlUserThreadStart [0x0x7ffa6e2eaf78+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:147)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:588)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:574)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:687)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-	at Com.AxisBankQA.Pages.ApplicationDetailsPage_PersoanlDetails.set_EmailId(ApplicationDetailsPage_PersoanlDetails.java:27)
-	at Com.AxisBank.QATest.TestCases.Verify_ApplicationDetailsPage_PersoanlDetails(TestCases.java:151)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at Com.AxisBankQA.Base.TestBase.CrossBrowserTesting(TestBase.java:18)
+	at Com.AxisBank.QATest.TestCases.setup(TestCases.java:43)
 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
@@ -178,770 +94,94 @@ Session ID: 68097ef0b83bf2478e3bb0d5929214ac
 ... Removed 25 stack frames]]>
     </failure>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_BusinessDetails" time="10.04">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#DIY_PORTAL_APPLICANT_DETAILS_Annual_Income&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=DIY_PORTAL_APPLICANT_DETAILS_Annual_Income}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#DIY_PORTAL_APPLICANT_DETAILS_Annual_Income"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=DIY_PORTAL_APPLICANT_DETAILS_Annual_Income}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-	at Com.AxisBankQA.Pages.ApplicationDetailsPage_BussinessDetails.Set_AnnualIncome(ApplicationDetailsPage_BussinessDetails.java:49)
-	at Com.AxisBank.QATest.TestCases.Verify_ApplicationDetailsPage_BusinessDetails(TestCases.java:166)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="@AfterClass teardown" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_FamilyDetails" time="10.084">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#txtAppDetlsMotherFirstName&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetlsMotherFirstName}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtAppDetlsMotherFirstName"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetlsMotherFirstName}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-	at Com.AxisBankQA.Pages.ApplicationDetailsPage_FamilyDetails.SetMothersFirstName(ApplicationDetailsPage_FamilyDetails.java:22)
-	at Com.AxisBank.QATest.TestCases.Verify_ApplicationDetailsPage_FamilyDetails(TestCases.java:177)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="VerifyTrasactionPage" time="0.001">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_AddressDetails" time="12.652">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#txtAppDetailsAddressAddressline1&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetailsAddressAddressline1}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtAppDetailsAddressAddressline1"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetailsAddressAddressline1}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-	at Com.AxisBankQA.Pages.ApplicationDetailsPage_AddressDetails.SetAddressLine1(ApplicationDetailsPage_AddressDetails.java:51)
-	at Com.AxisBank.QATest.TestCases.Verify_ApplicationDetailsPage_AddressDetails(TestCases.java:192)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="KYC_ScreenTest_Positive" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_AddNominee" time="10.219">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with value: I dont wish to nominate anyone
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: driver.version: unknown">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: I dont wish to nominate anyone
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
-	at Com.AxisBankQA.Pages.ApplicationDetailsPage_NomineeDetails.Select_ReasonForNominating(ApplicationDetailsPage_NomineeDetails.java:25)
-	at Com.AxisBank.QATest.TestCases.Verify_ApplicationDetailsPage_AddNominee(TestCases.java:207)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 22 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Entity_Details_POI_Screen" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_CreditFacilityDetails" time="0.902"/>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_DebitCardDetails" time="10.049">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#txtAppDetailsNameToBePrintedCard&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetailsNameToBePrintedCard}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtAppDetailsNameToBePrintedCard"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetailsNameToBePrintedCard}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-	at Com.AxisBankQA.Pages.ApplicationDetailsPage_DebitCardDetails.Set_NamePrintOnCard(ApplicationDetailsPage_DebitCardDetails.java:23)
-	at Com.AxisBank.QATest.TestCases.Verify_ApplicationDetailsPage_DebitCardDetails(TestCases.java:227)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Entity_Details_POA_Screen" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_FATCA_Details" time="10.219">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: driver.version: unknown">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Test1
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
-	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
-	at Com.AxisBankQA.Pages.ApplicationDetailsPage_FATCA_Details.SelectTaxPurposeAddress(ApplicationDetailsPage_FATCA_Details.java:28)
-	at Com.AxisBank.QATest.TestCases.Verify_ApplicationDetailsPage_FATCA_Details(TestCases.java:232)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 22 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Credit_Facility_Details_Screen" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_Add_LOA" time="10.141">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//*[@id=&amp;apos;DIY_PORTAL_APPLICANT_DETAILS_Do_you_wish_to_add_LOA_1_label&amp;apos;]/parent::div/div&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=xpath, value=//*[@id=&amp;apos;DIY_PORTAL_APPLICANT_DETAILS_Do_you_wish_to_add_LOA_1_label&amp;apos;]/parent::div/div}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='DIY_PORTAL_APPLICANT_DETAILS_Do_you_wish_to_add_LOA_1_label']/parent::div/div"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=xpath, value=//*[@id='DIY_PORTAL_APPLICANT_DETAILS_Do_you_wish_to_add_LOA_1_label']/parent::div/div}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
-	at Com.AxisBankQA.Pages.ApplicationDetailsPage_Add_LOA.SelectRadioBtn_LOA(ApplicationDetailsPage_Add_LOA.java:18)
-	at Com.AxisBank.QATest.TestCases.Verify_ApplicationDetailsPage_Add_LOA(TestCases.java:247)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Entity_Details_Account_Details_Screen" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_KYC_Screen" time="10.031">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#txtMobileNumber_KYC&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtMobileNumber_KYC}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtMobileNumber_KYC"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtMobileNumber_KYC}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-	at Com.AxisBankQA.Pages.LOA_KYC_Page_KYC_Verification.SetMobileNumber(LOA_KYC_Page_KYC_Verification.java:30)
-	at Com.AxisBank.QATest.TestCases.Verify_LOA_KYC_Screen(TestCases.java:253)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Entity_Details_Profile_Sheet_Screen" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_Application_DetailsPage_PersonalDetails" time="10.105">
-    <failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
-  (Session info: chrome=131.0.6778.205)
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac">
-      <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=131.0.6778.205)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-	at Com.AxisBankQA.Pages.LOA_Application_DetailsPage_PersonalDetails.set_EmailId(LOA_Application_DetailsPage_PersonalDetails.java:27)
-	at Com.AxisBank.QATest.TestCases.Verify_LOA_Application_DetailsPage_PersonalDetails(TestCases.java:265)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 27 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Entity_Details_Chennel_Facility_Screen" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_ApplicationDetailsPage_BusinessDetails" time="10.069">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#DIY_PORTAL_LOA_APPLICANT_DET_ANNUAL_INCOME&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=DIY_PORTAL_LOA_APPLICANT_DET_ANNUAL_INCOME}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#DIY_PORTAL_LOA_APPLICANT_DET_ANNUAL_INCOME"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=DIY_PORTAL_LOA_APPLICANT_DET_ANNUAL_INCOME}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-	at Com.AxisBankQA.Pages.LOA_Application_DetailsPage_BussinessDetails.Set_AnnualIncome(LOA_Application_DetailsPage_BussinessDetails.java:50)
-	at Com.AxisBank.QATest.TestCases.Verify_LOA_ApplicationDetailsPage_BusinessDetails(TestCases.java:280)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_PersoanlDetails" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_ApplicationDetailsPage_FamilyDetails" time="0.774"/>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_ApplicationDetailsPage_AddressDetails" time="10.468">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#txtAppDetailsAddressAddressline1&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetailsAddressAddressline1}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtAppDetailsAddressAddressline1"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetailsAddressAddressline1}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-	at Com.AxisBankQA.Pages.LOA_Application_DetailsPage_AddressDetails.SetAddressLine1(LOA_Application_DetailsPage_AddressDetails.java:50)
-	at Com.AxisBank.QATest.TestCases.Verify_LOA_ApplicationDetailsPage_AddressDetails(TestCases.java:306)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_BusinessDetails" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_ApplicationDetailsPage_DebitCardDetails" time="10.057">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#txtAppDetailsNameToBePrintedCard&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetailsNameToBePrintedCard}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtAppDetailsNameToBePrintedCard"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtAppDetailsNameToBePrintedCard}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-	at Com.AxisBankQA.Pages.LOA_Application_DetailsPage_LOA_DebitCard_Details.Set_NamePrintOnCard(LOA_Application_DetailsPage_LOA_DebitCard_Details.java:24)
-	at Com.AxisBank.QATest.TestCases.Verify_LOA_ApplicationDetailsPage_DebitCardDetails(TestCases.java:319)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_FamilyDetails" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_ApplicationDetailsPage_FATCA_Details" time="10.05">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#DIY_PORTAL_LOA_APPLICANT_DET_FTCA_ADDRESS_TYPE_FOR_TAX_PU&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=DIY_PORTAL_LOA_APPLICANT_DET_FTCA_ADDRESS_TYPE_FOR_TAX_PU}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#DIY_PORTAL_LOA_APPLICANT_DET_FTCA_ADDRESS_TYPE_FOR_TAX_PU"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=DIY_PORTAL_LOA_APPLICANT_DET_FTCA_ADDRESS_TYPE_FOR_TAX_PU}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
-	at Com.AxisBankQA.Pages.LOA_Application_DetailsPage_FATCA_Details.SelectTaxPurposeAddress(LOA_Application_DetailsPage_FATCA_Details.java:30)
-	at Com.AxisBank.QATest.TestCases.Verify_LOA_ApplicationDetailsPage_FATCA_Details(TestCases.java:324)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_AddressDetails" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="verify_ApplicationReviewPage" time="12.119">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//div[@id=&amp;apos;ReviewApplication_frame8&amp;apos;]/div[1]&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=xpath, value=//div[@id=&amp;apos;ReviewApplication_frame8&amp;apos;]/div[1]}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='ReviewApplication_frame8']/div[1]"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=xpath, value=//div[@id='ReviewApplication_frame8']/div[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at Com.AxisBankQA.Pages.Application_Review_Page.Verify_Application_Review_Page(Application_Review_Page.java:31)
-	at Com.AxisBank.QATest.TestCases.verify_ApplicationReviewPage(TestCases.java:340)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_AddNominee" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Funding_Page" time="10.072">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#txtFundingAmount&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtFundingAmount}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtFundingAmount"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=txtFundingAmount}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-	at Com.AxisBankQA.Pages.Funding_Page.setFundAmount(Funding_Page.java:23)
-	at Com.AxisBank.QATest.TestCases.Verify_Funding_Page(TestCases.java:346)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_CreditFacilityDetails" time="0.001">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_VKYC_Page_SendVKYC" time="10.075">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;css selector&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;#ddlVKYCPrimaryHolder&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=ddlVKYCPrimaryHolder}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ddlVKYCPrimaryHolder"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=id, value=ddlVKYCPrimaryHolder}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
-	at Com.AxisBankQA.Pages.VKYC_Page_SendVKYC.SelectPrimaryHolder(VKYC_Page_SendVKYC.java:19)
-	at Com.AxisBank.QATest.TestCases.Verify_VKYC_Page_SendVKYC(TestCases.java:355)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_DebitCardDetails" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_VKYC_Page_Verification_Via_Video" time="10.018">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//*[@id=&amp;apos;DIY_PORTAL_VKYC_Org_PANCARD_label&amp;apos;]/parent::div/div&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=xpath, value=//*[@id=&amp;apos;DIY_PORTAL_VKYC_Org_PANCARD_label&amp;apos;]/parent::div/div}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='DIY_PORTAL_VKYC_Org_PANCARD_label']/parent::div/div"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=xpath, value=//*[@id='DIY_PORTAL_VKYC_Org_PANCARD_label']/parent::div/div}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
-	at Com.AxisBankQA.Pages.VKYC_Page_Verification_Via_Video.select_PANcardReady_CheckBox(VKYC_Page_Verification_Via_Video.java:29)
-	at Com.AxisBank.QATest.TestCases.Verify_VKYC_Page_Verification_Via_Video(TestCases.java:362)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_FATCA_Details" time="0.0">
+    <skipped/>
   </testcase>
-  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ConfigurationPage_AccountDetails" time="13.049">
-    <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&amp;quot;method&amp;quot;:&amp;quot;xpath&amp;quot;,&amp;quot;selector&amp;quot;:&amp;quot;//div[@id=&amp;apos;CongratulationPage_frame1&amp;apos;]/div[1]&amp;quot;}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &amp;apos;3.141.59&amp;apos;, revision: &amp;apos;e82be7d358&amp;apos;, time: &amp;apos;2018-11-14T08:17:03&amp;apos;
-System info: host: &amp;apos;LPT6849&amp;apos;, ip: &amp;apos;192.168.101.18&amp;apos;, os.name: &amp;apos;Windows 11&amp;apos;, os.arch: &amp;apos;amd64&amp;apos;, os.version: &amp;apos;10.0&amp;apos;, java.version: &amp;apos;23.0.1&amp;apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=xpath, value=//div[@id=&amp;apos;CongratulationPage_frame1&amp;apos;]/div[1]}">
-      <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='CongratulationPage_frame1']/div[1]"}
-  (Session info: chrome=131.0.6778.205)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LPT6849', ip: '192.168.101.18', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\NARWAD~1.RAM\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 68097ef0b83bf2478e3bb0d5929214ac
-*** Element info: {Using=xpath, value=//div[@id='CongratulationPage_frame1']/div[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
-	at Com.AxisBankQA.Pages.ConfigurationPage_AccountDetails.Click_On_Account_details(ConfigurationPage_AccountDetails.java:24)
-	at Com.AxisBank.QATest.TestCases.Verify_ConfigurationPage_AccountDetails(TestCases.java:388)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
-... Removed 25 stack frames]]>
-    </failure>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ApplicationDetailsPage_Add_LOA" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_KYC_Screen" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_Application_DetailsPage_PersonalDetails" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_ApplicationDetailsPage_BusinessDetails" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_ApplicationDetailsPage_FamilyDetails" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_ApplicationDetailsPage_AddressDetails" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_ApplicationDetailsPage_DebitCardDetails" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_LOA_ApplicationDetailsPage_FATCA_Details" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="verify_ApplicationReviewPage" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_Funding_Page" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_VKYC_Page_SendVKYC" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_VKYC_Page_Verification_Via_Video" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Com.AxisBank.QATest.TestCases" name="Verify_ConfigurationPage_AccountDetails" time="0.0">
+    <skipped/>
   </testcase>
 </testsuite>
