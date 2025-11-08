@@ -6,7 +6,7 @@
 </listeners>
   <test thread-count="5" name="ShyamNarwade">
     <classes>
-      <class name="Com.AxisBank.QATest.TestCases"/>
+      <class name="AxisBank_DIY.Com.AxisBank.QATest.TestCases"/>
     </classes>
   </test> <!-- ShyamNarwade -->
 </suite> <!-- Suite -->
